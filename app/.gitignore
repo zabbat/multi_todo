@@ -1,0 +1,5 @@
+/build
+google-services.json
+
+#don't include generated dev certs
+/src/dev/res/raw/devcert.cer

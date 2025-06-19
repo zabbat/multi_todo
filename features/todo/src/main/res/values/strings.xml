@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo_add_title">Title</string>
+    <string name="todo_add_content">Content</string>
+    <string name="todo_add_button">Add</string>
+    <string name="todo_add_cancel">Cancel</string>
+    <string name="list_error">error: %1$s</string>
+</resources>

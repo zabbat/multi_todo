@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_user_email">Email</string>
+    <string name="create_user_password">Password</string>
+    <string name="create_user_re_entry_password">Re-entry Password</string>
+    <string name="register_button">Register</string>
+    <string name="register_completed">completed!</string>
+    <string name="register_error">error: %1$s</string>
+    <string name="login_user_name">User Name</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_register_button">Register</string>
+</resources>
