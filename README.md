@@ -2,7 +2,7 @@
 
 A modern **Android Kotlin** app built with **Jetpack Compose**, **Firebase Authentication**, and modular feature-based architecture. This project connects to a companion **Spring Boot** backend API, which handles auth validation, data persistence, and business logic.
 
-👉 [See Spring Boot backend README](./backend/README.md) for API and server setup.
+👉 [See Spring Boot backend README](https://github.com/zabbat/todo_backend) for API and server setup.
 
 ---
 
@@ -28,6 +28,7 @@ A modern **Android Kotlin** app built with **Jetpack Compose**, **Firebase Authe
 * 🧱 **Feature-based Architecture** – Clean separation using `data`, `domain`, `presentation`, and `di` layers.
 * 🧪 **Testable with MockK + Koin** – Unit and instrumentation tests supported.
 * 🧩 **Scalable Project Structure** – Easy to extend with new features under `features/`.
+* 💻 **Runs emulator and backend on same host** – Speeds up development and QA by allowing emulator to connect directly to the host, all on SSL
 
 ---
 
@@ -83,14 +84,14 @@ API_BASE_URL=http://10.0.2.2:8080
 
 ### Connecting to the Backend
 
-The app communicates with a Spring Boot backend (see [`backend/`](./backend/) for setup). It expects:
+The app communicates with a Spring Boot backend (see [`backend/`](https://github.com/zabbat/todo_backend) for setup). It expects:
 
 * An API endpoint at `API_BASE_URL`
 * Valid Firebase ID tokens from the user
 
 Use `AuthInterceptorProviderImpl` and `RetrofitAuthInterceptor` to inject tokens automatically into headers.
 
-> Emulator: use `10.0.2.2` to reach `localhost` on the host machine.
+> Emulator: use `10.0.2.2` to reach `localhost` on the host machine. See backend readme for certs.
 
 ---
 
